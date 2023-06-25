@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * _push - push new node to linked list.
- * @head: linked list's head address.
- * @line_number: the line number of the monty file that we're currently reading
- * @arg: the push's corresponding arg.
- * @mode: 0 if stack and 1 if queue.
- * Return: nothing.
+ * _push - push new node to linked list
+ * @head: linked list's head address
+ * @line_number: memory alocation of the linked list's head
+ * @arg: push's corresponding argument
+ * @mode: 0 if stack and 1 if queue
+ * Return: null
  */
 void _push(stack_t **head, unsigned int line_number, char *arg, int *mode)
 {
@@ -32,10 +32,10 @@ void _push(stack_t **head, unsigned int line_number, char *arg, int *mode)
 }
 
 /**
- * check_push_arg - check if a push command has an arg in its line.
- * @token: token corresponding the push's line.
- * @line_number: line number.
- * Return: pointer to character representing the push's arg or NULL.
+ * check_push_arg - check if push command has argument in it's line
+ * @token: token corresponding the push's line
+ * @line_number: number of line
+ * Return: pointer to chara reping push's argument or NULL
  */
 char *check_push_arg(char *token, unsigned int line_number)
 {
@@ -78,8 +78,8 @@ char *check_push_arg(char *token, unsigned int line_number)
 }
 
 /**
- * get_usage_err - displays usage error.
- * @line_number: line_number.
+ * get_usage_err - display error usage.
+ * @line_number: number of line we are at
  */
 void get_usage_err(unsigned int line_number)
 {
@@ -91,11 +91,10 @@ void get_usage_err(unsigned int line_number)
 }
 
 /**
- * is_number - check if the push argument is a number of not
- * @str: the token that's retrieved after a found 'push' command.
- * @line_number: line number.
- * in a given line.
- * Return: int.
+ * is_number - check if the push argument is a number or not.
+ * @str: token that is retrieved after a found push command.
+ * @line_number: number of line we are at
+ * Return: num
  */
 int is_number(char *str, unsigned int line_number)
 {
