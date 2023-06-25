@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * _pint - prints the value at the top of the stack.
- * @head: the address of the linked list's head.
- * @line_number: line number of line we're reading.
- * Return: nothing
+ * _pint - prints value at top of the stack
+ * @head: memory allocation of linked list's head
+ * @line_number: number line we are reading
+ * Return: null
  */
 
 void _pint(stack_t **head, unsigned int line_number)
